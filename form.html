@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h1>Job Application Form</h1>
+    <p>Please fill out all the fields below to submit your application.</p>
+
+    <form action="/submit-application" method="get">
+        
+        <!-- Text inputs (example: first and last name) -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+        <br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+        <br><br>
+        
+        <!-- Password input -->
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        
+        <!-- Radio buttons (example: full-time or part-time) -->
+        <fieldset>
+            <legend>Employment Type:</legend>
+            <input type="radio" id="fullTime" name="employmentType" value="FullTime">
+            <label for="fullTime">Full-Time</label>
+            
+            <input type="radio" id="partTime" name="employmentType" value="PartTime">
+            <label for="partTime">Part-Time</label>
+        </fieldset>
+        <br>
+        
+        <!-- Checkboxes (example: list of skills) -->
+        <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" id="htmlSkill" name="skills" value="HTML">
+            <label for="htmlSkill">HTML</label>
+            
+            <input type="checkbox" id="cssSkill" name="skills" value="CSS">
+            <label for="cssSkill">CSS</label>
+            
+            <input type="checkbox" id="jsSkill" name="skills" value="JavaScript">
+            <label for="jsSkill">JavaScript</label>
+        </fieldset>
+        <br>
+        
+        <!-- File input (example: resume upload) -->
+        <label for="resume">Upload Your Resume:</label>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+        
+        <!-- Number input (example: years of experience) -->
+        <label for="yearsExp">Years of Experience:</label>
+        <input type="number" id="yearsExp" name="yearsExp" min="0" max="40">
+        <br><br>
+        
+        <!-- Range input (example: desired working hours per week) -->
+        <label for="workHours">Desired Working Hours/Week:</label>
+        <input type="range" id="workHours" name="workHours" min="0" max="60">
+        <br><br>
+        
+        <!-- Date input (example: earliest available date) -->
+        <label for="startDate">Earliest Available Date:</label>
+        <input type="date" id="startDate" name="startDate">
+        <br><br>
+        
+        <!-- Time input (example: preferred interview time) -->
+        <label for="interviewTime">Preferred Interview Time:</label>
+        <input type="time" id="interviewTime" name="interviewTime">
+        <br><br>
+        
+        <!-- Datetime-local input (example: proposed interview appointment) -->
+        <label for="interviewDateTime">Proposed Interview Date & Time:</label>
+        <input type="datetime-local" id="interviewDateTime" name="interviewDateTime">
+        <br><br>
+        
+        <!-- Month input (example: month of graduation) -->
+        <label for="gradMonth">Month of Graduation:</label>
+        <input type="month" id="gradMonth" name="gradMonth">
+        <br><br>
+        
+        <!-- Week input (example: follow-up week) -->
+        <label for="followUpWeek">Week for Next Follow-Up:</label>
+        <input type="week" id="followUpWeek" name="followUpWeek">
+        <br><br>
+        
+        <!-- Email input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        
+        <!-- Telephone input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        
+        <!-- URL input (example: LinkedIn or personal website) -->
+        <label for="linkedIn">LinkedIn Profile URL:</label>
+        <input type="url" id="linkedIn" name="linkedIn">
+        <br><br>
+        
+        <!-- Color input (just for fun) -->
+        <label for="favColor">Your Brand/Favorite Color:</label>
+        <input type="color" id="favColor" name="favColor">
+        <br><br>
+        
+        <!-- Search input (example: searching open positions) -->
+        <label for="positionSearch">Search Available Positions:</label>
+        <input type="search" id="positionSearch" name="positionSearch">
+        <br><br>
+
+        <!-- Hidden input (normally invisible; shown here for demonstration) -->
+        <label for="applicationID">Application ID (Hidden Field):</label>
+        <input type="hidden" id="applicationID" name="applicationID" value="12345">
+        <br><br>
+        
+        <!-- Image input (acts as a submit button when clicked) -->
+        <label for="submitImage">Click Image to Submit:</label>
+        <input type="image" id="submitImage" name="submitImage"
+               src="https://via.placeholder.com/50"
+               alt="Submit Application" width="50" height="50">
+        <br><br>
+        
+        <!-- A standalone button (doesn't submit by default) -->
+        <input type="button" value="Just a Button">
+        <br><br>
+        
+        <!-- Textarea (example: cover letter or additional info) -->
+        <label for="coverLetter">Cover Letter:</label>
+        <br>
+        <textarea id="coverLetter" name="coverLetter" rows="4" cols="50"
+                  placeholder="Briefly describe your background and why you're a good fit..."></textarea>
+        <br><br>
+        
+        <!-- Select dropdown (example: position applying for) -->
+        <label for="position">Position Applying For:</label>
+        <select id="position" name="position">
+            <option value="">--Please choose an option--</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="pm">Product Manager</option>
+            <option value="qa">QA Tester</option>
+        </select>
+        <br><br>
+        
+        <!-- Submit and Reset buttons -->
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
