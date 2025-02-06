@@ -1,0 +1,33 @@
+/* Basic styling for clarity */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Parent container with relative positioning */
+  .parent {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #ececec;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Absolutely positioned child */
+  .child-absolute {
+    position: absolute;
+    top: 20px;    /* positions within the parent container */
+    left: 80px;
+    background-color: #add8e6; /* light blue */
+    padding: 10px;
+  }
+  
+  /* Regular (static) child */
+  .child-static {
+    background-color: #fafad2; /* light yellow */
+    margin-top: 10px;
+    padding: 10px;
+  }
+  

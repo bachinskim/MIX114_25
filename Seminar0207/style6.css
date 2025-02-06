@@ -1,0 +1,17 @@
+  /* Basic styling for text and floats */
+  p {
+    width: 30%;
+    margin: 10px;     /* Add minimal spacing */
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Floats */
+  .float-right {
+    float: right;
+  }
+  
+  .float-left {
+    float: left;
+  }
+  

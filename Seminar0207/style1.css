@@ -1,0 +1,30 @@
+/* Basic styling for demonstration */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Give each box a different background color and spacing */
+  .box {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .box1 {
+    background-color: #e74c3c; /* red */
+  }
+  
+  .box2 {
+    background-color: #3498db; /* blue */
+  
+    /* Apply position: relative and shift the box slightly upward and to the right */
+    position: relative;
+    top: -10px;    /* moves the box visually 10px upward */
+    left: 10px;    /* moves the box visually 10px to the right */
+  }
+  
+  .box3 {
+    background-color: #2ecc71; /* green */
+  }
+  
